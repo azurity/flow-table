@@ -37,11 +37,13 @@ func main() {
 
 	engines := engine.NewMultiEngine(map[string]render.RenderEngine{
 		"js":  engine.NewJsEngine(),
+		"py":  engine.NewPyEngine(),
 		"cel": celEngine,
 	}, map[string]string{
 		"javascript": "js",
 		"ecmascript": "js",
 		"es":         "js",
+		"python":     "py",
 	})
 
 	loader := &loader.DirectoryLoader{

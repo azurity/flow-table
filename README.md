@@ -43,8 +43,8 @@ flow-table will try load all files in the given directory for using as data sour
 support format:
 - sqlite:
     - with ext `.db` or `.sqlite`
-    - each table will be a property
-    - each property is an array of struct
+    - each table will be a property(in javascript) or key-value(in other language)
+    - each property is an array of struct / dict
 - xlsx:
     - with ext `.xlsx`
     - each table will be a property
@@ -56,6 +56,8 @@ support format:
 
 - javascript:
     - impl based on [goja](https://github.com/dop251/goja)
+- python:
+    - impl based on [gpython](https://github.com/go-python/gpython)
 - cel:
     - impl based on [cel-go](https://github.com/google/cel-go)
 

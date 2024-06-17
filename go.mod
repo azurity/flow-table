@@ -5,6 +5,7 @@ go 1.20
 require (
 	github.com/dop251/goja v0.0.0-20240610225006-393f6d42497b
 	github.com/glebarez/go-sqlite v1.22.0
+	github.com/go-python/gpython v0.2.0
 	github.com/google/cel-go v0.20.1
 	github.com/xuri/excelize/v2 v2.8.1
 )
